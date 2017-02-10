@@ -21,11 +21,13 @@ class Inventory:
         for i in total_inventory:
             print total_inventory.index[i]
 
-store_a = Inventory("Caitlin's Store")
-eggs = Product(1,"eggs",3.49)
-milk = Product(2,"Milk",5.99)
-store_a.insert(eggs)
-store_a.insert(milk)
-store_a.report
+
+if __name__ == "__main__":
+    store_a = Inventory("Caitlin's Store")
+    eggs = Product(1,"eggs",3.49)
+    milk = Product(2,"Milk",5.99)
+    store_a.insert(eggs)
+    store_a.insert(milk)
+    store_a.report
 
 
